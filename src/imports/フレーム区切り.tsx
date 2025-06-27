@@ -634,11 +634,8 @@ function Frame13() {
             "linear-gradient(97.3491deg, rgb(220, 192, 144) 5.6477%, rgb(153, 133, 94) 95.316%)",
         }}
       >
-        <p className="adjustLetterSpacing block leading-[60px] mb-0">
-          5年連続、
-        </p>
         <p className="leading-[60px]">
-          口コミだけで大阪No
+          5年連続、口コミだけで大阪No
           <span className="adjustLetterSpacing tracking-[-3.2px]">.１！</span>
         </p>
       </div>
