@@ -1230,7 +1230,14 @@ function Frame25() {
         data-name="body_bg"
       />
       <Component9 />
-      <div className="absolute bg-[#d9d9d9] left-1/2 size-[390px] top-[159px] translate-x-[-50%]" />
+      {/* Replace gray placeholder with actual salon image */}
+      <div className="absolute left-1/2 w-[390px] top-[159px] translate-x-[-50%]">
+        <img
+          src={img202505261347581}
+          alt="RÊVE salon 内観"
+          className="w-full h-auto object-cover"
+        />
+      </div>
       <div className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] left-[23px] not-italic text-[#ffffff] text-[16px] text-left text-nowrap top-[634px] tracking-[1.6px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           Instagram
@@ -1602,13 +1609,16 @@ export default function B() {
   return (
     <div className="bg-[#ffffff] relative w-full min-h-screen flex flex-col items-center" data-name="B案の配色">
       <div className="relative w-full max-w-[390px] mx-auto">
+        {/* Frame sequence re-ordered to avoid duplicated/ misplaced sections on mobile */}
         <Frame19 />
         <Frame20 />
         <Frame22 />
+        {/* Reviews section (Frame21) placed before FAQ / footer */}
+        <Frame21 />
         <Frame23 />
         <Frame24 />
+        {/* Footer & company info */}
         <Frame25 />
-        <Frame21 />
       </div>
     </div>
   );
