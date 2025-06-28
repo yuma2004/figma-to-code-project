@@ -10,14 +10,14 @@ import svgPaths from "./svg-ca464ytbls";
 // import imgVoiceB1 from "figma:asset/944ed0011d9a3f2b7d3a9db3a494ec56c3349761.png";
 
 // プレースホルダー画像URLs
-const imgFv11 = "https://via.placeholder.com/595x397.png?text=FV1";
-const imgS16302541 = "https://via.placeholder.com/509x678.png?text=S16302541";
-const imgS16302491 = "https://via.placeholder.com/565x647.png?text=S16302491";
-const imgPhoto2506021559460231 = "https://via.placeholder.com/350x262.png?text=Photo";
-const imgS16302441 = "https://via.placeholder.com/370x370.png?text=S16302441";
-const img202505261347581 = "https://via.placeholder.com/250x312.png?text=20250526";
-const imgVoiceA1 = "https://via.placeholder.com/150x100.png?text=VoiceA";
-const imgVoiceB1 = "https://via.placeholder.com/150x100.png?text=VoiceB";
+const imgFv11 = "/asset/B案_Frame 3_ファーストビュー_11-68.png";
+const imgS16302541 = "/asset/B案_Frame 22_S_1630254_1_11-159.png";
+const imgS16302491 = "/asset/B案_Frame 22_S_1630249_1_11-165.png";
+const imgPhoto2506021559460231 = "/asset/B案_Frame 22_写真素材_11-171.png";
+const imgS16302441 = "/asset/B案_Frame 9_S_1630244_1_11-234.png";
+const img202505261347581 = "/asset/B案_Frame 22_デスクトップSS_11-140.png";
+const imgVoiceA1 = "/asset/B案_Frame 14_ボイスアイコンA_11-148.png";
+const imgVoiceB1 = "/asset/B案_Frame 14_ボイスアイコンB_11-267.png";
 
 import {
   imgS16302542,
@@ -70,9 +70,9 @@ function ArrowBlack1() {
 
 function Group14() {
   return (
-    <div className="absolute contents left-[138px] top-[677px]">
+    <div className="absolute contents left-6 sm:left-[138px] top-[677px]">
       <ArrowBlack1 />
-      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[0] left-[138px] not-italic text-[#000000] text-[16px] text-left text-nowrap top-[677px] tracking-[1.6px]">
+      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[0] left-6 sm:left-[138px] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left text-nowrap top-[677px] tracking-[1.6px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           無料カウンセリングを申し込む
         </p>
@@ -84,10 +84,10 @@ function Group14() {
 function Component() {
   return (
     <div
-      className="absolute contents left-[108px] top-[657px]"
+      className="absolute contents left-4 sm:left-[108px] top-[657px]"
       data-name="ボタン"
     >
-      <div className="absolute bg-gradient-to-r from-[#af986b] h-[58px] left-[108px] rounded-[3px] to-[#af986b] top-[657px] via-50% via-[#eecb87] w-[350px]" />
+      <div className="absolute bg-gradient-to-r from-[#af986b] h-[58px] left-4 sm:left-[108px] rounded-[3px] to-[#af986b] top-[657px] via-50% via-[#eecb87] w-[calc(100%-2rem)] sm:w-[350px]" />
       <Group14 />
     </div>
   );
@@ -95,26 +95,25 @@ function Component() {
 
 function FvSp() {
   return (
-    <div className="absolute contents left-0 top-0" data-name="FV-sp">
-      <div className="absolute bg-black h-[755px] left-[88px] top-0 w-[390px]" />
+    <div className="relative h-full w-full" data-name="FV-sp">
+      <div className="absolute bg-black h-full left-0 top-0 w-full" />
       <div
-        className="absolute bg-center bg-cover bg-no-repeat h-[397px] left-0 top-[358px] w-[595.5px]"
+        className="absolute bg-center bg-cover bg-no-repeat h-[397px] left-0 right-0 top-[358px]"
         data-name="fv_1 1"
         style={{ backgroundImage: `url('${imgFv11}')` }}
       />
-      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[0] left-[108px] not-italic text-[#c4b095] text-[20px] text-left text-nowrap top-[101px] tracking-[2px]">
+      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[0] left-4 sm:left-[108px] not-italic text-[#c4b095] text-[16px] sm:text-[20px] text-left text-nowrap top-[101px] tracking-[2px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           質の高いメンズ脱毛で
         </p>
       </div>
-      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] leading-[0] left-[108px] not-italic text-[#ffffff] text-[64px] text-left text-nowrap top-[244px] tracking-[-3.2px]">
+      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] leading-[0] left-4 sm:left-[108px] not-italic text-[#ffffff] text-[48px] sm:text-[64px] text-left text-nowrap top-[244px] tracking-[-3.2px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           入れよう
         </p>
       </div>
       <div
-        className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[216px] leading-[36px] not-italic text-[#ffffff] text-[20px] text-left top-[361px] w-[177px]"
-        style={{ left: "calc(50% - 191.75px)" }}
+        className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[216px] leading-[28px] sm:leading-[36px] not-italic text-[#ffffff] text-[16px] sm:text-[20px] text-left top-[361px] w-[calc(100%-2rem)] sm:w-[177px] left-4 sm:left-[calc(50%-191.75px)]"
       >
         <p className="block mb-0">単発照射の</p>
         <p className="block mb-0">高品質な施術、</p>
@@ -124,36 +123,33 @@ function FvSp() {
         <p className="block">してみませんか？</p>
       </div>
       <div
-        className="absolute h-px top-[84px] translate-x-[-50%] w-[300px]"
+        className="absolute h-px top-[84px] left-4 right-4 sm:left-[calc(50%-150px)] sm:right-[calc(50%-150px)]"
         style={{
-          left: "calc(50% - 39.75px)",
           backgroundImage:
             "linear-gradient(90deg, rgb(191, 164, 111) 0%, rgba(191, 164, 111, 0.5) 27.885%, rgb(196, 176, 149) 49.519%, rgba(191, 164, 111, 0) 100%)",
         }}
       />
       <div
-        className="absolute h-px top-[141px] translate-x-[-50%] w-[300px]"
+        className="absolute h-px top-[141px] left-4 right-4 sm:left-[calc(50%-150px)] sm:right-[calc(50%-150px)]"
         style={{
           backgroundImage:
             "linear-gradient(90deg, rgb(191, 164, 111) 0%, rgba(191, 164, 111, 0.5) 27.885%, rgb(196, 176, 149) 49.519%, rgba(191, 164, 111, 0) 100%)",
-          left: "calc(50% - 39.75px)",
         }}
       />
-      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] leading-[0] left-[101px] not-italic text-[#ffffff] text-[64px] text-left text-nowrap top-[162px] tracking-[-3.2px]">
+      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] leading-[0] left-4 sm:left-[101px] not-italic text-[#ffffff] text-[48px] sm:text-[64px] text-left text-nowrap top-[162px] tracking-[-3.2px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           自信を手に
         </p>
       </div>
       <div
-        className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[0] not-italic text-[#c4b095] text-[20px] text-left text-nowrap top-10 tracking-[2px]"
-        style={{ left: "calc(50% - 189.75px)" }}
+        className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[0] not-italic text-[#c4b095] text-[16px] sm:text-[20px] text-left text-nowrap top-10 tracking-[2px] left-4 sm:left-[calc(50%-189.75px)]"
       >
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           口コミだけで5年連続大阪No.1
         </p>
       </div>
       <div
-        className="absolute h-[138px] left-[89px] top-[617px] w-[389px]"
+        className="absolute h-[138px] left-4 right-4 sm:left-[89px] sm:right-auto sm:w-[389px] top-[617px]"
         style={{
           backgroundImage:
             "linear-gradient(3.03726deg, rgba(0, 0, 0, 0.5) 6.6448%, rgba(0, 0, 0, 0.25) 93.667%)",
@@ -166,7 +162,7 @@ function FvSp() {
 
 function Frame19() {
   return (
-    <div className="absolute h-[755px] left-[-88px] top-px w-[595.5px]">
+    <div className="relative h-[755px] w-full overflow-hidden">
       <FvSp />
     </div>
   );
@@ -174,27 +170,26 @@ function Frame19() {
 
 function Component01() {
   return (
-    <div className="absolute contents left-5 top-[139px]" data-name="特徴01">
-      <div className="absolute bg-[#ffffff] h-[115px] left-[30px] top-[149px] w-[340px]" />
-      <div className="absolute bg-[#000000] left-5 size-20 top-[139px]">
+    <div className="absolute contents left-4 sm:left-5 top-[139px]" data-name="特徴01">
+      <div className="absolute bg-[#ffffff] h-[115px] left-6 sm:left-[30px] top-[149px] w-[calc(100%-2rem)] sm:w-[340px]" />
+      <div className="absolute bg-[#000000] left-4 sm:left-5 size-20 top-[139px]">
         <div className="absolute border border-[#c4b095] border-solid inset-0 pointer-events-none" />
       </div>
-      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-11 not-italic text-[#ffffff] text-[16px] text-left top-[163px] w-8">
+      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-6 sm:left-11 not-italic text-[#ffffff] text-[16px] text-left top-[163px] w-8">
         <p className="block leading-[16px]">特徴</p>
       </div>
-      <div className="absolute flex h-[48.746px] items-center justify-center left-[42px] top-[166px] w-[43.286px]">
+      <div className="absolute flex h-[48.746px] items-center justify-center left-8 sm:left-[42px] top-[166px] w-[43.286px]">
         <div className="flex-none skew-x-[349.941deg]">
           <div className="font-['Noto_Serif_JP:SemiBold',_sans-serif] h-[49.533px] leading-[0] not-italic relative text-[#ffffff] text-[16px] text-left tracking-[-1.6px] w-[34.5px]">
             <p className="adjustLetterSpacing block leading-[44px]">０1</p>
           </div>
         </div>
       </div>
-      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[55px] leading-[0] left-[116px] not-italic text-[#000000] text-[16px] text-left top-[201px] w-[206px]">
+      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[55px] leading-[0] left-[100px] sm:left-[116px] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[201px] w-[calc(100%-110px)] sm:w-[206px]">
         <p className="block leading-[24px]">お財布にも優しく、気軽に試せます</p>
       </div>
       <div
-        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[16px] text-left top-[169px] w-[218px]"
-        style={{ left: "calc(50% - 79px)" }}
+        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[169px] w-[calc(100%-110px)] sm:w-[218px] left-[100px] sm:left-[calc(50%-79px)]"
       >
         <p className="block leading-[16px]">都度払い制で安心</p>
       </div>
@@ -204,29 +199,28 @@ function Component01() {
 
 function Component02() {
   return (
-    <div className="absolute contents left-5 top-[304px]" data-name="特徴02">
-      <div className="absolute bg-[#ffffff] h-[151px] left-[30px] top-[314px] w-[340px]" />
-      <div className="absolute bg-[#000000] left-5 size-20 top-[304px]">
+    <div className="absolute contents left-4 sm:left-5 top-[304px]" data-name="特徴02">
+      <div className="absolute bg-[#ffffff] h-[151px] left-6 sm:left-[30px] top-[314px] w-[calc(100%-2rem)] sm:w-[340px]" />
+      <div className="absolute bg-[#000000] left-4 sm:left-5 size-20 top-[304px]">
         <div className="absolute border border-[#c4b095] border-solid inset-0 pointer-events-none" />
       </div>
-      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-11 not-italic text-[#ffffff] text-[16px] text-left top-[328px] w-8">
+      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-6 sm:left-11 not-italic text-[#ffffff] text-[16px] text-left top-[328px] w-8">
         <p className="block leading-[16px]">特徴</p>
       </div>
-      <div className="absolute flex h-[48.746px] items-center justify-center left-[42px] top-[331px] w-[43.286px]">
+      <div className="absolute flex h-[48.746px] items-center justify-center left-8 sm:left-[42px] top-[331px] w-[43.286px]">
         <div className="flex-none skew-x-[349.941deg]">
           <div className="font-['Noto_Serif_JP:SemiBold',_sans-serif] h-[49.533px] leading-[0] not-italic relative text-[#ffffff] text-[16px] text-left tracking-[-1.6px] w-[34.5px]">
             <p className="adjustLetterSpacing block leading-[44px]">０2</p>
           </div>
         </div>
       </div>
-      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[116px] not-italic text-[#000000] text-[16px] text-left top-[392px] w-[197px]">
+      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[100px] sm:left-[116px] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[392px] w-[calc(100%-110px)] sm:w-[197px]">
         <p className="block leading-[30px]">
           安全性と効果を最重視した純国産の認定マシン
         </p>
       </div>
       <div
-        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] h-[52px] leading-[30px] not-italic text-[#000000] text-[16px] text-left top-[327px] w-[218px]"
-        style={{ left: "calc(50% - 79px)" }}
+        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] h-[52px] leading-[30px] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[327px] w-[calc(100%-110px)] sm:w-[218px] left-[100px] sm:left-[calc(50%-79px)]"
       >
         <p className="block mb-0">高品質な</p>
         <p className="block">エステティック認定機器使用</p>
@@ -237,27 +231,26 @@ function Component02() {
 
 function Component03() {
   return (
-    <div className="absolute contents left-5 top-[505px]" data-name="特徴03">
-      <div className="absolute bg-[#ffffff] h-[121px] left-[30px] top-[515px] w-[340px]" />
-      <div className="absolute bg-[#000000] left-5 size-20 top-[505px]">
+    <div className="absolute contents left-4 sm:left-5 top-[505px]" data-name="特徴03">
+      <div className="absolute bg-[#ffffff] h-[121px] left-6 sm:left-[30px] top-[515px] w-[calc(100%-2rem)] sm:w-[340px]" />
+      <div className="absolute bg-[#000000] left-4 sm:left-5 size-20 top-[505px]">
         <div className="absolute border border-[#c4b095] border-solid inset-0 pointer-events-none" />
       </div>
-      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-11 not-italic text-[#ffffff] text-[16px] text-left top-[529px] w-8">
+      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-6 sm:left-11 not-italic text-[#ffffff] text-[16px] text-left top-[529px] w-8">
         <p className="block leading-[16px]">特徴</p>
       </div>
-      <div className="absolute flex h-[48.746px] items-center justify-center left-[42px] top-[532px] w-[43.286px]">
+      <div className="absolute flex h-[48.746px] items-center justify-center left-8 sm:left-[42px] top-[532px] w-[43.286px]">
         <div className="flex-none skew-x-[349.941deg]">
           <div className="font-['Noto_Serif_JP:SemiBold',_sans-serif] h-[49.533px] leading-[0] not-italic relative text-[#ffffff] text-[16px] text-left tracking-[-1.6px] w-[34.5px]">
             <p className="adjustLetterSpacing block leading-[44px]">０3</p>
           </div>
         </div>
       </div>
-      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[116px] not-italic text-[#000000] text-[16px] text-left top-[563px] w-[180px]">
+      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[100px] sm:left-[116px] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[563px] w-[calc(100%-110px)] sm:w-[180px]">
         <p className="block leading-[30px]">あなたの肌質に合わせた最適な施術</p>
       </div>
       <div
-        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[16px] text-left top-[528px] w-[218px]"
-        style={{ left: "calc(50% - 79px)" }}
+        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[528px] w-[calc(100%-110px)] sm:w-[218px] left-[100px] sm:left-[calc(50%-79px)]"
       >
         <p className="block leading-[30px]">オーダーメイド脱毛</p>
       </div>
@@ -267,29 +260,28 @@ function Component03() {
 
 function Component04() {
   return (
-    <div className="absolute contents left-5 top-[675px]" data-name="特徴04">
-      <div className="absolute bg-[#ffffff] h-[121px] left-[30px] top-[685px] w-[340px]" />
-      <div className="absolute bg-[#000000] left-5 size-20 top-[675px]">
+    <div className="absolute contents left-4 sm:left-5 top-[675px]" data-name="特徴04">
+      <div className="absolute bg-[#ffffff] h-[121px] left-6 sm:left-[30px] top-[685px] w-[calc(100%-2rem)] sm:w-[340px]" />
+      <div className="absolute bg-[#000000] left-4 sm:left-5 size-20 top-[675px]">
         <div className="absolute border border-[#c4b095] border-solid inset-0 pointer-events-none" />
       </div>
-      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-11 not-italic text-[#ffffff] text-[16px] text-left top-[699px] w-8">
+      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-6 sm:left-11 not-italic text-[#ffffff] text-[16px] text-left top-[699px] w-8">
         <p className="block leading-[16px]">特徴</p>
       </div>
-      <div className="absolute flex h-[48.746px] items-center justify-center left-[42px] top-[702px] w-[43.286px]">
+      <div className="absolute flex h-[48.746px] items-center justify-center left-8 sm:left-[42px] top-[702px] w-[43.286px]">
         <div className="flex-none skew-x-[349.941deg]">
           <div className="font-['Noto_Serif_JP:SemiBold',_sans-serif] h-[49.533px] leading-[0] not-italic relative text-[#ffffff] text-[16px] text-left tracking-[-1.6px] w-[34.5px]">
             <p className="adjustLetterSpacing block leading-[44px]">０4</p>
           </div>
         </div>
       </div>
-      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[116px] not-italic text-[#000000] text-[16px] text-left top-[733px] w-[254px]">
+      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[100px] sm:left-[116px] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[733px] w-[calc(100%-110px)] sm:w-[254px]">
         <p className="block leading-[30px]">
           脱毛に加えて、エステ、眉毛ケア。整体なども同時施術可能
         </p>
       </div>
       <div
-        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[16px] text-left top-[698px] w-[218px]"
-        style={{ left: "calc(50% - 79px)" }}
+        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[698px] w-[calc(100%-110px)] sm:w-[218px] left-[100px] sm:left-[calc(50%-79px)]"
       >
         <p className="block leading-[30px]">施術内容の幅広さ</p>
       </div>
@@ -299,29 +291,28 @@ function Component04() {
 
 function Component05() {
   return (
-    <div className="absolute contents left-5 top-[846px]" data-name="特徴05">
-      <div className="absolute bg-[#ffffff] h-[121px] left-[30px] top-[856px] w-[340px]" />
-      <div className="absolute bg-[#000000] left-5 size-20 top-[846px]">
+    <div className="absolute contents left-4 sm:left-5 top-[846px]" data-name="特徴05">
+      <div className="absolute bg-[#ffffff] h-[121px] left-6 sm:left-[30px] top-[856px] w-[calc(100%-2rem)] sm:w-[340px]" />
+      <div className="absolute bg-[#000000] left-4 sm:left-5 size-20 top-[846px]">
         <div className="absolute border border-[#c4b095] border-solid inset-0 pointer-events-none" />
       </div>
-      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-11 not-italic text-[#ffffff] text-[16px] text-left top-[870px] w-8">
+      <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] h-3.5 leading-[0] left-6 sm:left-11 not-italic text-[#ffffff] text-[16px] text-left top-[870px] w-8">
         <p className="block leading-[16px]">特徴</p>
       </div>
-      <div className="absolute flex h-[48.746px] items-center justify-center left-[42px] top-[873px] w-[43.286px]">
+      <div className="absolute flex h-[48.746px] items-center justify-center left-8 sm:left-[42px] top-[873px] w-[43.286px]">
         <div className="flex-none skew-x-[349.941deg]">
           <div className="font-['Noto_Serif_JP:SemiBold',_sans-serif] h-[49.533px] leading-[0] not-italic relative text-[#ffffff] text-[16px] text-left tracking-[-1.6px] w-[34.5px]">
             <p className="adjustLetterSpacing block leading-[44px]">０５</p>
           </div>
         </div>
       </div>
-      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[116px] not-italic text-[#000000] text-[16px] text-left top-[904px] w-[218px]">
+      <div className="absolute font-['Noto_Serif_JP:Medium',_sans-serif] h-[50px] leading-[0] left-[100px] sm:left-[116px] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[904px] w-[calc(100%-110px)] sm:w-[218px]">
         <p className="block leading-[30px]">
           施術だけでなく、リラックスできるコミュニティも提供
         </p>
       </div>
       <div
-        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[16px] text-left top-[869px] w-[218px]"
-        style={{ left: "calc(50% - 79px)" }}
+        className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#000000] text-[14px] sm:text-[16px] text-left top-[869px] w-[calc(100%-110px)] sm:w-[218px] left-[100px] sm:left-[calc(50%-79px)]"
       >
         <p className="block leading-[30px]">「美容のサードプレイス」</p>
       </div>
@@ -395,9 +386,9 @@ function Component1() {
 
 function Frame20() {
   return (
-    <div className="absolute h-[1104px] left-[-2px] top-[756px] w-[390px]">
+    <div className="relative h-[1104px] w-full">
       <div
-        className="absolute bg-black h-[1104px] left-1/2 top-0 translate-x-[-50%] w-[390px]"
+        className="absolute bg-black h-[1104px] left-0 top-0 w-full"
         data-name="body_bg"
       />
       <div
@@ -559,9 +550,9 @@ function Component2() {
 
 function Frame22() {
   return (
-    <div className="absolute h-[1400px] left-0 top-[3102px] w-[390px]">
+    <div className="relative h-[1400px] w-full">
       <div
-        className="absolute bg-black h-[1400px] left-1/2 top-0 translate-x-[-50%] w-[390px]"
+        className="absolute bg-black h-[1400px] left-0 top-0 w-full"
         data-name="body_bg"
       />
       <div
@@ -1056,9 +1047,9 @@ function Component8() {
 
 function Frame23() {
   return (
-    <div className="absolute h-[1220px] left-0 top-[4502px] w-[390px]">
+    <div className="relative h-[1220px] w-full">
       <div
-        className="absolute bg-[#1c1c1c] h-[1220px] left-1/2 top-0 translate-x-[-50%] w-[390px]"
+        className="absolute bg-[#1c1c1c] h-[1220px] left-0 top-0 w-full"
         data-name="body_bg"
       />
       <div className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[0] left-1/2 not-italic text-[#ffffff] text-[24px] text-center text-nowrap top-0 translate-x-[-50%]">
@@ -1095,7 +1086,7 @@ function MaskGroup3() {
 
 function Frame24() {
   return (
-    <div className="absolute h-96 left-0 top-[5722px] w-[391px]">
+    <div className="relative h-96 w-full">
       <MaskGroup3 />
       <div
         className="absolute font-['Noto_Serif_JP:SemiBold',_sans-serif] leading-[36px] not-italic text-[#ffffff] text-[20px] text-center text-nowrap top-[50px] translate-x-[-50%] whitespace-pre"
@@ -1233,9 +1224,9 @@ function Group15() {
 
 function Frame25() {
   return (
-    <div className="absolute h-[1096px] left-0 top-[6106px] w-[390px]">
+    <div className="relative h-[1096px] w-full">
       <div
-        className="absolute bg-[#1c1c1c] h-[1096px] left-1/2 top-0 translate-x-[-50%] w-[390px]"
+        className="absolute bg-[#1c1c1c] h-[1096px] left-0 top-0 w-full"
         data-name="body_bg"
       />
       <Component9 />
@@ -1507,9 +1498,9 @@ function Group23() {
 
 function Frame21() {
   return (
-    <div className="absolute h-[1242px] left-0 top-[1867px] w-[390px]">
+    <div className="relative h-[1242px] w-full">
       <div
-        className="absolute bg-black h-[1242px] left-1/2 top-0 translate-x-[-50%] w-[390px]"
+        className="absolute bg-black h-[1242px] left-0 top-0 w-full"
         data-name="body_bg"
       />
       <div
@@ -1609,14 +1600,16 @@ function Frame21() {
 
 export default function B() {
   return (
-    <div className="bg-[#ffffff] relative size-full" data-name="B案の配色">
-      <Frame19 />
-      <Frame20 />
-      <Frame22 />
-      <Frame23 />
-      <Frame24 />
-      <Frame25 />
-      <Frame21 />
+    <div className="bg-[#ffffff] relative w-full min-h-screen flex flex-col items-center" data-name="B案の配色">
+      <div className="relative w-full max-w-[390px] mx-auto">
+        <Frame19 />
+        <Frame20 />
+        <Frame22 />
+        <Frame23 />
+        <Frame24 />
+        <Frame25 />
+        <Frame21 />
+      </div>
     </div>
   );
 }

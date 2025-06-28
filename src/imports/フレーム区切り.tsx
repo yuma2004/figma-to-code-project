@@ -14,18 +14,18 @@ import svgPaths from "./svg-dvpysbbfms";
 // import imgPhoto2506021559460232 from "figma:asset/05d600d07965f3ab74951bc92f806135e976a27d.png";
 
 // プレースホルダー画像URLs
-const imgS16302621 = "https://via.placeholder.com/400x500.png?text=S16302621";
-const imgS16302671 = "https://via.placeholder.com/500x663.png?text=S16302671";
-const imgS16302441 = "https://via.placeholder.com/700x933.png?text=S16302441";
-const imgS16302681 = "https://via.placeholder.com/444x592.png?text=S16302681";
-const imgS16302481 = "https://via.placeholder.com/392x522.png?text=S16302481";
-const imgFv11 = "https://via.placeholder.com/1028x685.png?text=FV1";
-const img202505261347581 = "https://via.placeholder.com/250x312.png?text=20250526";
-const imgVoiceA1 = "https://via.placeholder.com/150x100.png?text=VoiceA";
-const imgVoiceB1 = "https://via.placeholder.com/150x100.png?text=VoiceB";
-const imgS16302541 = "https://via.placeholder.com/509x678.png?text=S16302541";
-const imgS16302491 = "https://via.placeholder.com/565x647.png?text=S16302491";
-const imgPhoto2506021559460232 = "https://via.placeholder.com/350x262.png?text=Photo";
+const imgS16302621 = "/asset/A案_Frame 9_S_1630262_1_3-17.png";
+const imgS16302671 = "/asset/A案_Frame 9_S_1630267_1_3-20.png";
+const imgS16302441 = "/asset/A案_Frame 9_S_1630244_1_3-23.png";
+const imgS16302681 = "/asset/A案_Frame 9_S_1630268_1_3-26.png";
+const imgS16302481 = "/asset/A案_Frame 9_S_1630248_1_3-29.png";
+const imgFv11 = "/asset/A案_Frame 3_ファーストビュー_3-36.png";
+const img202505261347581 = "/asset/A案_Frame 14_デスクトップSS_3-109.png";
+const imgVoiceA1 = "/asset/A案_Frame 14_ボイスアイコンA_3-117.png";
+const imgVoiceB1 = "/asset/A案_Frame 14_ボイスアイコンB_3-125.png";
+const imgS16302541 = "/asset/A案_Frame 14_S_1630254_1_3-141.png";
+const imgS16302491 = "/asset/A案_Frame 14_S_1630249_1_3-144.png";
+const imgPhoto2506021559460232 = "/asset/A案_Frame 16_写真素材_3-147.png";
 
 import {
   imgS16302622,
@@ -1671,15 +1671,17 @@ function Frame18() {
 
 export default function Component6() {
   return (
-    <div className="bg-[#1c1c1c] relative w-full min-h-screen mx-auto" data-name="フレーム区切り">
-      <Frame9 />
-      <Frame3 />
-      <Frame12 />
-      <Frame13 />
-      <Frame14 />
-      <Frame16 />
-      <Frame17 />
-      <Frame18 />
+    <div className="bg-[#1c1c1c] relative w-full min-h-screen flex flex-col items-center" data-name="フレーム区切り">
+      <div className="relative w-[1401px] max-w-full">
+        <Frame9 />
+        <Frame3 />
+        <Frame12 />
+        <Frame13 />
+        <Frame14 />
+        <Frame16 />
+        <Frame17 />
+        <Frame18 />
+      </div>
     </div>
   );
 }
