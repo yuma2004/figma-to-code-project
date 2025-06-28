@@ -151,13 +151,13 @@ function Component() {
 
 function Frame9() {
   return (
-    <div className="absolute h-[700px] left-0 top-[6534px] w-[1400px]">
+    <div className="absolute h-[700px] left-0 top-[6534px] w-full">
       <MaskGroup />
       <MaskGroup1 />
       <MaskGroup2 />
       <MaskGroup3 />
       <MaskGroup4 />
-      <div className="absolute bg-[rgba(13,13,13,0.8)] h-[700px] left-0 top-0 w-[1400px]" />
+      <div className="absolute bg-[rgba(13,13,13,0.8)] h-[700px] left-0 top-0 w-full" />
       <Component />
     </div>
   );
@@ -212,15 +212,15 @@ function ArrowBlack1() {
 
 function Frame3() {
   return (
-    <div className="absolute h-[881px] left-px top-px w-[1400px]">
-      <div className="absolute bg-[#1c1c1c] h-[868px] left-0 top-0 w-[1399px]" />
+    <div className="absolute h-[881px] left-0 top-0 w-full">
+      <div className="absolute bg-[#1c1c1c] h-[868px] left-0 top-0 w-full" />
       <div
         className="absolute bg-center bg-cover bg-no-repeat h-[685px] left-[312px] top-[196px] w-[1027.5px]"
         data-name="fv_1 1"
         style={{ backgroundImage: `url('${imgFv11}')` }}
       />
       <div
-        className="absolute h-[181px] left-0 top-[707px] w-[1400px]"
+        className="absolute h-[181px] left-0 top-[707px] w-full"
         style={{
           backgroundImage:
             "linear-gradient(1.10779deg, rgba(0, 0, 0, 0.5) 6.6448%, rgba(0, 0, 0, 0.25) 93.667%)",
@@ -608,7 +608,7 @@ function Frame12() {
 
 function Frame13() {
   return (
-    <div className="absolute h-[765px] left-px overflow-clip top-[2092px] w-[1399px]">
+    <div className="absolute h-[765px] left-0 overflow-clip top-[2092px] w-full">
       <div
         className="absolute h-0.5 top-[199px] translate-x-[-50%] w-[760px]"
         style={{
@@ -1442,7 +1442,7 @@ function ArrowBlack4() {
 
 function Frame17() {
   return (
-    <div className="absolute h-[1578px] left-0 overflow-clip top-[4956px] w-[1400px]">
+    <div className="absolute h-[1578px] left-0 overflow-clip top-[4956px] w-full">
       <div
         className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] not-italic text-[#ffffff] text-[32px] text-center text-nowrap top-2.5 translate-x-[-50%]"
         style={{ left: "calc(50% + 5px)" }}
@@ -1515,7 +1515,7 @@ function Frame19() {
 
 function Frame18() {
   return (
-    <div className="absolute h-[764px] left-0 overflow-clip top-[7240px] w-[1400px]">
+    <div className="absolute h-[764px] left-0 overflow-clip top-[7240px] w-full">
       <ArrowBlack5 />
       <div className="absolute font-['Noto_Serif_JP:Bold',_sans-serif] leading-[0] left-80 not-italic text-[#ffffff] text-[16px] text-left text-nowrap top-[265px] tracking-[1.6px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
@@ -1671,7 +1671,7 @@ function Frame18() {
 
 export default function Component6() {
   return (
-    <div className="bg-[#1c1c1c] relative size-full" data-name="フレーム区切り">
+    <div className="bg-[#1c1c1c] relative w-full min-h-screen mx-auto" data-name="フレーム区切り">
       <Frame9 />
       <Frame3 />
       <Frame12 />

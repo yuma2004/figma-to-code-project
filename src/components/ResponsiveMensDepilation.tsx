@@ -6,8 +6,10 @@ export default function ResponsiveMensDepilation() {
   const isMobile = useMobile();
 
   return (
-    <div className="w-full">
-      {isMobile ? <B /> : <Component6 />}
+    <div className="w-full min-h-screen flex justify-center">
+      <div className="w-full max-w-[1400px] relative">
+        {isMobile ? <B /> : <Component6 />}
+      </div>
     </div>
   );
 }
